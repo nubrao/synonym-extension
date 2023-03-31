@@ -20,9 +20,7 @@
     "default_title": "Sinônimos",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "activeTab",
-    "http://*/*",
-    "https://*/*"
-  ]
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'",
+  "permissions": ["activeTab", "http://*/*", "https://*/*"
+]
 }
