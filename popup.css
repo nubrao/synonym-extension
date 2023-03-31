@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px;
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0063a0;
+  }
+  
+  #synonymsList {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+  }
+  
+  #synonymsList li {
+    margin-bottom: 5px;
+  }
+  
