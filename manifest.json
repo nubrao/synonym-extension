@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Sinônimos",
   "version": "1.0",
   "description": "Encontre sinônimos facilmente!",
@@ -10,7 +10,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -20,7 +20,16 @@
     "default_title": "Sinônimos",
     "default_popup": "popup.html"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'",
-  "permissions": ["activeTab", "http://*/*", "https://*/*"
-]
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "script-src": [
+      "'self'",
+      "https://cdn.jsdelivr.net"
+    ]
+  }
 }
