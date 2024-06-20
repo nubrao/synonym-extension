@@ -1,47 +1,95 @@
 body {
-    font-family: sans-serif;
-    font-size: 14px;
-    width: 250px;
-    height: 250px;
-    padding: 15px;
-  }
-  
-  h1 {
-    font-size: 20px;
-    margin-top: 0;
-  }
-  
-  form {
-    display: flex;
-    align-items: center;
-  }
-  
-  input[type="text"] {
-    flex-grow: 1;
-    margin-right: 10px;
-    padding: 5px;
-  }
-  
-  button {
-    padding: 5px;
-    background-color: #0078d7;
-    color: #fff;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0063a0;
-  }
-  
-  #synonymsList {
-    list-style: none;
-    margin-top: 15px;
-    padding: 0;
-  }
-  
-  #synonymsList li {
-    margin-bottom: 5px;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  width: 300px;
+  height: 400px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+
+button {
+  padding: 8px;
+  background-color: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#loader {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#synonymsList {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+#synonymsList li {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+#synonymsList li:hover {
+  background-color: #f0f0f0;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  padding: 10px 0;
+  position: relative;
+}
